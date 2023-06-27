@@ -34,8 +34,6 @@ export const authOptions: AuthOptions = {
             email: credentials.email
           }
         });
-        console.log(typeof user === 'undefined');
-        
 
         if (!user || !user?.hashedPassword) {
           throw new Error('Invalid credentials');
@@ -53,7 +51,8 @@ export const authOptions: AuthOptions = {
         return user;
       }
     })
-  ],
+  ],   
+  
   debug: process.env.NODE_ENV === 'development',
   session: {
     strategy: "jwt",
