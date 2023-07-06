@@ -118,7 +118,12 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
           <div className="mt-6 flex items-center justify-end gap-x-6">
-            <Button disabled={isLoading} secondary onClick={onClose}>
+            <Button
+              type="button"
+              disabled={isLoading}
+              secondary
+              onClick={onClose}
+            >
               Cancel
             </Button>
             <Button type="submit" disabled={isLoading}>
