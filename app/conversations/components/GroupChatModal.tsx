@@ -111,7 +111,6 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
           </Button>
           <Button
             disabled={isLoading}
-            onClick={() => router.push("")}
             type="submit"
           >
             Create
